@@ -6,7 +6,7 @@ export const Context = createContext();
 const ContextProvider = (props) => {
 
 
-    async function onSent(prompt) {
+    async function onSent(prompt) => {
         await run(prompt);
     }
 
