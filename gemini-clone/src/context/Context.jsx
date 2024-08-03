@@ -6,8 +6,8 @@ export const Context = createContext();
 const ContextProvider = (props) => {
 
 
-    async function onSent(prompt) => {
-        await run(prompt);
+    const onSent = async (prompt) => {
+        await run(prompt)
     }
 
     onSent("What is react js?")
